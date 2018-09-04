@@ -6,9 +6,6 @@ target 'Hopeathon' do
   use_frameworks!
 
   # Pods for Hopeathon
-  pod 'Firebase/Core'
-  pod 'Firebase/Auth'
-  pod 'Firebase/Firestore'
   pod 'JJFloatingActionButton'
 
 end
