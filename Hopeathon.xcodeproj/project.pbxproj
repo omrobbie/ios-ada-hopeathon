@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		603E4C71CB24E3F551285753 /* Pods_Hopeathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD9E3B06359142A365FC463 /* Pods_Hopeathon.framework */; };
+		FC230E86213EC0E000A67845 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC230E85213EC0E000A67845 /* User.swift */; };
 		FC47EC05213D7E2500EF4DA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47EC04213D7E2500EF4DA8 /* AppDelegate.swift */; };
 		FC47EC07213D7E2500EF4DA8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47EC06213D7E2500EF4DA8 /* LoginViewController.swift */; };
 		FC47EC0A213D7E2500EF4DA8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC47EC08213D7E2500EF4DA8 /* Login.storyboard */; };
@@ -35,6 +36,7 @@
 		0588584EEEB706711FE93AB8 /* Pods-Hopeathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hopeathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hopeathon/Pods-Hopeathon.debug.xcconfig"; sourceTree = "<group>"; };
 		7DD9E3B06359142A365FC463 /* Pods_Hopeathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hopeathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B76744A23B4EFA2A4F622AA9 /* Pods-Hopeathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hopeathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hopeathon/Pods-Hopeathon.release.xcconfig"; sourceTree = "<group>"; };
+		FC230E85213EC0E000A67845 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FC47EC01213D7E2500EF4DA8 /* Hopeathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hopeathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC47EC04213D7E2500EF4DA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC47EC06213D7E2500EF4DA8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FC230E84213EC0B500A67845 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC230E85213EC0E000A67845 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FC47EBF8213D7E2500EF4DA8 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +122,7 @@
 			children = (
 				FC47EC16213DFAC800EF4DA8 /* Supporting Files */,
 				FC47EC2D213E57C000EF4DA8 /* Helpers */,
+				FC230E84213EC0B500A67845 /* Model */,
 				FC47EC17213DFAE100EF4DA8 /* Auth */,
 				FC47EC18213DFB0E00EF4DA8 /* Project */,
 				FC47EC21213E203B00EF4DA8 /* Project Detail */,
@@ -341,6 +352,7 @@
 				FC47EC2F213E58FD00EF4DA8 /* ProjectDetailViewController.swift in Sources */,
 				FC47EC3E213E8D4600EF4DA8 /* PointDetailViewController.swift in Sources */,
 				FC47EC3C213E89AA00EF4DA8 /* ProjectMainViewController.swift in Sources */,
+				FC230E86213EC0E000A67845 /* User.swift in Sources */,
 				FC47EC07213D7E2500EF4DA8 /* LoginViewController.swift in Sources */,
 				FC47EC2A213E567900EF4DA8 /* ProjectNewViewController.swift in Sources */,
 				FC47EC33213E704800EF4DA8 /* PointViewController.swift in Sources */,

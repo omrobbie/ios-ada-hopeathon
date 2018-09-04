@@ -37,7 +37,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ifz-Sn-lEV"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Projects" id="paO-aQ-HkQ"/>
+                    <navigationItem key="navigationItem" title="Projects" id="paO-aQ-HkQ">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="LFv-DS-Oxa">
+                            <connections>
+                                <segue destination="R1f-l2-DQM" kind="showDetail" id="BZh-v9-5p6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="7iG-yM-E2s" kind="show" identifier="toDetailProject" id="m2E-co-nMm"/>
                         <segue destination="baw-rw-Nwf" kind="show" identifier="toNewProject" id="4Ao-GI-16C"/>
@@ -102,6 +108,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PA2-mJ-J54" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2096.8000000000002" y="483.99014778325125"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="BLO-fi-Ovl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="R1f-l2-DQM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8n2-ru-iNB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308" y="560"/>
         </scene>
         <!--Project New View Controller-->
         <scene sceneID="gPx-KO-F3f">
