@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AD9E9A2213ED88A0055A505 /* ProjectsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9E9A1213ED88A0055A505 /* ProjectsTableViewCell.swift */; };
 		603E4C71CB24E3F551285753 /* Pods_Hopeathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD9E3B06359142A365FC463 /* Pods_Hopeathon.framework */; };
 		61F08696213EB70A00E1BAF3 /* PointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F08695213EB70A00E1BAF3 /* PointCell.swift */; };
 		FC230E86213EC0E000A67845 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC230E85213EC0E000A67845 /* User.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		0588584EEEB706711FE93AB8 /* Pods-Hopeathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hopeathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hopeathon/Pods-Hopeathon.debug.xcconfig"; sourceTree = "<group>"; };
+		1AD9E9A1213ED88A0055A505 /* ProjectsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewCell.swift; sourceTree = "<group>"; };
 		61F08695213EB70A00E1BAF3 /* PointCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointCell.swift; sourceTree = "<group>"; };
 		7DD9E3B06359142A365FC463 /* Pods_Hopeathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hopeathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B76744A23B4EFA2A4F622AA9 /* Pods-Hopeathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hopeathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hopeathon/Pods-Hopeathon.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				FC47EC27213E563A00EF4DA8 /* ProjectViewController.swift */,
 				FC47EC3B213E89AA00EF4DA8 /* ProjectMainViewController.swift */,
 				FC47EC29213E567900EF4DA8 /* ProjectNewViewController.swift */,
+				1AD9E9A1213ED88A0055A505 /* ProjectsTableViewCell.swift */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				FC47EC31213E611600EF4DA8 /* ProjectDetailEditViewController.swift in Sources */,
 				FC47EC2C213E579100EF4DA8 /* Extensions.swift in Sources */,
 				FC47EC42213E8DAD00EF4DA8 /* PointNewViewController.swift in Sources */,
+				1AD9E9A2213ED88A0055A505 /* ProjectsTableViewCell.swift in Sources */,
 				FC47EC2F213E58FD00EF4DA8 /* ProjectDetailViewController.swift in Sources */,
 				FC47EC3E213E8D4600EF4DA8 /* PointDetailViewController.swift in Sources */,
 				FC47EC3C213E89AA00EF4DA8 /* ProjectMainViewController.swift in Sources */,
@@ -503,7 +507,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3SMXMP42NY;
+				DEVELOPMENT_TEAM = FLZ5RQ5XZL;
 				INFOPLIST_FILE = "$(SRCROOT)/Hopeathon/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -522,7 +526,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3SMXMP42NY;
+				DEVELOPMENT_TEAM = FLZ5RQ5XZL;
 				INFOPLIST_FILE = "$(SRCROOT)/Hopeathon/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

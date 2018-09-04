@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,23 +19,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="List of project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9M-QS-Ova">
-                                <rect key="frame" x="16" y="100" width="106" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KuG-N3-l5j">
-                                <rect key="frame" x="16" y="129" width="175" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Menuju ke detail Project 1"/>
-                                <connections>
-                                    <action selector="btnDetailProjectClicked:" destination="LoG-7g-t0F" eventType="touchUpInside" id="nZz-VX-eNg"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qlz-uj-EaU">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellProjects" id="lgr-I1-NqG" customClass="ProjectsTableViewCell" customModule="Hopeathon" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lgr-I1-NqG" id="UEd-RP-hEd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IqO-MQ-yX0">
+                                                    <rect key="frame" x="15" y="11" width="345" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IqO-MQ-yX0" firstAttribute="top" secondItem="UEd-RP-hEd" secondAttribute="topMargin" id="Jt5-EH-A7k"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="IqO-MQ-yX0" secondAttribute="bottom" id="R58-oY-KaX"/>
+                                                <constraint firstItem="IqO-MQ-yX0" firstAttribute="leading" secondItem="UEd-RP-hEd" secondAttribute="leadingMargin" id="sAi-kY-YME"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="IqO-MQ-yX0" secondAttribute="trailing" id="uP9-Vc-U59"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblProjectName" destination="IqO-MQ-yX0" id="xxt-pd-XS9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qlz-uj-EaU" firstAttribute="top" secondItem="ifz-Sn-lEV" secondAttribute="top" id="1pB-d6-Te6"/>
+                            <constraint firstItem="qlz-uj-EaU" firstAttribute="leading" secondItem="ifz-Sn-lEV" secondAttribute="leading" id="VQ2-RT-e6M"/>
+                            <constraint firstItem="ifz-Sn-lEV" firstAttribute="trailing" secondItem="qlz-uj-EaU" secondAttribute="trailing" id="Yxw-Xb-Y8T"/>
+                            <constraint firstItem="ifz-Sn-lEV" firstAttribute="bottom" secondItem="qlz-uj-EaU" secondAttribute="bottom" id="hjZ-jv-Mxz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ifz-Sn-lEV"/>
                     </view>
                     <navigationItem key="navigationItem" title="Projects" id="paO-aQ-HkQ">
@@ -45,13 +68,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="tblviewProjects" destination="qlz-uj-EaU" id="u3L-yG-DPe"/>
                         <segue destination="7iG-yM-E2s" kind="show" identifier="toDetailProject" id="m2E-co-nMm"/>
                         <segue destination="baw-rw-Nwf" kind="show" identifier="toNewProject" id="4Ao-GI-16C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r5d-wG-Rfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1308" y="118"/>
+            <point key="canvasLocation" x="1308" y="117.48768472906404"/>
         </scene>
         <!--Project Main View Controller-->
         <scene sceneID="j1D-6Z-Q4R">
