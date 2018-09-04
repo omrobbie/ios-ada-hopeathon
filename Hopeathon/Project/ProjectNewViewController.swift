@@ -13,4 +13,8 @@ class ProjectNewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func btnSaveProject(_ sender: Any) {
+        showDialog(title: "Save new project")
+    }
 }

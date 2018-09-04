@@ -7,11 +7,22 @@
 //
 
 import UIKit
+import JJFloatingActionButton
 
 class ProjectViewController: UIViewController {
+    
+    let actionButton = JJFloatingActionButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        actionButton.buttonColor = #colorLiteral(red: 0.1490196078, green: 0.6, blue: 0.9843137255, alpha: 1)
+        
+        actionButton.addItem(title: "Add") { item in
+            self.performSegue(withIdentifier: "toNewProject", sender: self)
+        }
+        
+        actionButton.display(inViewController: self)
     }
 
     @IBAction func btnDetailProjectClicked(_ sender: Any) {

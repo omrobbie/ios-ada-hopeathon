@@ -9,5 +9,6 @@ target 'Hopeathon' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'JJFloatingActionButton'
 
 end

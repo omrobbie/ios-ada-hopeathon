@@ -95,6 +95,7 @@ PODS:
     - gRPC-Core (= 1.14.1)
     - gRPC-RxLibrary (= 1.14.1)
   - GTMSessionFetcher/Core (1.2.0)
+  - JJFloatingActionButton (0.9.2)
   - leveldb-library (1.20)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
@@ -107,6 +108,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Firestore
+  - JJFloatingActionButton
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -125,6 +127,7 @@ SPEC REPOS:
     - gRPC-ProtoRPC
     - gRPC-RxLibrary
     - GTMSessionFetcher
+    - JJFloatingActionButton
     - leveldb-library
     - nanopb
     - Protobuf
@@ -145,10 +148,11 @@ SPEC CHECKSUMS:
   gRPC-ProtoRPC: 78f976fc6a1eafc0e1f4965c255c313aa0859b1e
   gRPC-RxLibrary: c4c826507ad3c8c8fab6887f153938eb04b86d59
   GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
+  JJFloatingActionButton: b3ac139e2e7568d01b7604d46cc287ff6a852210
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
 
-PODFILE CHECKSUM: 538961f560dbd5d5dd6f5eb532e9a755f7970816
+PODFILE CHECKSUM: 16f44dcfb5a42768012d93c68d4b7f3243822595
 
 COCOAPODS: 1.5.3

@@ -136,7 +136,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Y5T-W2-y8o"/>
                     </view>
-                    <navigationItem key="navigationItem" id="q9v-KB-Yie"/>
+                    <navigationItem key="navigationItem" id="q9v-KB-Yie">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Ddl-o6-G7K">
+                            <connections>
+                                <action selector="btnSaveProject:" destination="baw-rw-Nwf" id="DEf-q8-2wn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rYf-WY-9nr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
