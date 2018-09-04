@@ -12,6 +12,7 @@ class PointMainViewController: UIViewController {
 
     @IBOutlet weak var cvPointDetail: UIView!
     @IBOutlet weak var cvLogistic: UIView!
+    var idSelected = Int()
     
     override func viewDidLoad() {
         super.viewDidLoad()
