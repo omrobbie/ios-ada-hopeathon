@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GQy-Lq-cxC">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Projects-->
+        <scene sceneID="cmL-Sz-EVr">
+            <objects>
+                <viewController id="LoG-7g-t0F" customClass="ProjectViewController" customModule="Hopeathon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aG5-YV-CBl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="List of project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9M-QS-Ova">
+                                <rect key="frame" x="16" y="100" width="106" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KuG-N3-l5j">
+                                <rect key="frame" x="16" y="129" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Detail Project"/>
+                                <connections>
+                                    <action selector="btnDetailProjectClicked:" destination="LoG-7g-t0F" eventType="touchUpInside" id="Uoo-fo-UfL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ifz-Sn-lEV"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Projects" id="paO-aQ-HkQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="khD-ws-Mbx">
+                            <connections>
+                                <segue destination="baw-rw-Nwf" kind="show" identifier="toNewProject" id="fBr-15-zWa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="VMI-fo-Ecj" kind="show" identifier="toDetailProject" id="G7L-Vq-D8d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r5d-wG-Rfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308" y="118"/>
+        </scene>
+        <!--Project New View Controller-->
+        <scene sceneID="gPx-KO-F3f">
+            <objects>
+                <viewController id="baw-rw-Nwf" customClass="ProjectNewViewController" customModule="Hopeathon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="obX-km-ido">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create new project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqH-LD-rWH">
+                                <rect key="frame" x="16" y="100" width="145" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Y5T-W2-y8o"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="q9v-KB-Yie"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rYf-WY-9nr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2097" y="-211"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="P6a-kf-9hB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GQy-Lq-cxC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1sS-Xb-DJT">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LoG-7g-t0F" kind="relationship" relationship="rootViewController" id="nM9-hm-IB6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hct-sk-I3X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="118.29085457271366"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="zOC-0I-Tkj">
+            <objects>
+                <tabBarController id="VMI-fo-Ecj" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t2c-p0-YTB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LfY-lz-ecd" kind="relationship" relationship="viewControllers" id="jFN-Te-JLd"/>
+                        <segue destination="zUs-j5-xCA" kind="relationship" relationship="viewControllers" id="Vrc-ou-Pc5"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7LF-Ni-qC9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2097" y="488"/>
+        </scene>
+        <!--Project Detail-->
+        <scene sceneID="vXi-ed-li7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Project Detail" id="LfY-lz-ecd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="5tl-CC-RMe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fsd-wJ-Rnj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1797" y="918"/>
+        </scene>
+        <!--Point-->
+        <scene sceneID="Ynq-gy-Ip8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Point" id="zUs-j5-xCA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="dSK-39-K1j"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nHR-G7-ewy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2395" y="918"/>
+        </scene>
+    </scenes>
+</document>
