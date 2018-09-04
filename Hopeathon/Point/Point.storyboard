@@ -140,7 +140,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oiU-WM-8Ga" userLabel="Point Detail">
                                 <rect key="frame" x="0.0" y="65" width="375" height="602"/>
                                 <connections>
-                                    <segue destination="WTU-aY-bjI" kind="embed" id="b0S-ps-zrT"/>
+                                    <segue destination="WTU-aY-bjI" kind="embed" identifier="containDetail" id="b0S-ps-zrT"/>
                                 </connections>
                             </containerView>
                         </subviews>

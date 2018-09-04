@@ -26,7 +26,7 @@ var dummyArray = [
 class PointViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var idSelected = Int()
+    var dataSelected = [String:String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,11 @@ class PointViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! PointMainViewController
-        destination.idSelected = idSelected
+        //let destination = PointMainViewController()
+        print(dataSelected)
+        print("ss")
+        //PointMainViewController().pointData = dataSelected
+        destination.pointData = dataSelected
     }
 }
 
@@ -58,7 +62,8 @@ extension PointViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        idSelected = indexPath.row
+        //idSelected = indexPath.row
+        dataSelected = dummyArray[indexPath.row]
         performSegue(withIdentifier: "toDetailPoint", sender: self)
     }
     
