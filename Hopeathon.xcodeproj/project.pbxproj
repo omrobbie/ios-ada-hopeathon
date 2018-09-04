@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		1AD9E9A2213ED88A0055A505 /* ProjectsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9E9A1213ED88A0055A505 /* ProjectsTableViewCell.swift */; };
 		603E4C71CB24E3F551285753 /* Pods_Hopeathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD9E3B06359142A365FC463 /* Pods_Hopeathon.framework */; };
-		61F08696213EB70A00E1BAF3 /* PointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F08695213EB70A00E1BAF3 /* PointCell.swift */; };
+		61F08698213ED28200E1BAF3 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F08697213ED28200E1BAF3 /* Point.swift */; };
+		61F0869A213ED7DE00E1BAF3 /* PointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F08699213ED7DE00E1BAF3 /* PointCell.swift */; };
 		FC230E86213EC0E000A67845 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC230E85213EC0E000A67845 /* User.swift */; };
 		FC47EC05213D7E2500EF4DA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47EC04213D7E2500EF4DA8 /* AppDelegate.swift */; };
 		FC47EC07213D7E2500EF4DA8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47EC06213D7E2500EF4DA8 /* LoginViewController.swift */; };
@@ -38,6 +39,8 @@
 		0588584EEEB706711FE93AB8 /* Pods-Hopeathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hopeathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hopeathon/Pods-Hopeathon.debug.xcconfig"; sourceTree = "<group>"; };
 		1AD9E9A1213ED88A0055A505 /* ProjectsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewCell.swift; sourceTree = "<group>"; };
 		61F08695213EB70A00E1BAF3 /* PointCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointCell.swift; sourceTree = "<group>"; };
+		61F08697213ED28200E1BAF3 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		61F08699213ED7DE00E1BAF3 /* PointCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointCell.swift; sourceTree = "<group>"; };
 		7DD9E3B06359142A365FC463 /* Pods_Hopeathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hopeathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B76744A23B4EFA2A4F622AA9 /* Pods-Hopeathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hopeathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hopeathon/Pods-Hopeathon.release.xcconfig"; sourceTree = "<group>"; };
 		FC230E85213EC0E000A67845 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -99,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				FC230E85213EC0E000A67845 /* User.swift */,
+				61F08697213ED28200E1BAF3 /* Point.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,7 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				FC47EC1F213E06A900EF4DA8 /* Point.storyboard */,
-				61F08695213EB70A00E1BAF3 /* PointCell.swift */,
+				61F08699213ED7DE00E1BAF3 /* PointCell.swift */,
 				FC47EC32213E704800EF4DA8 /* PointViewController.swift */,
 				FC47EC37213E853400EF4DA8 /* PointMainViewController.swift */,
 				FC47EC41213E8DAD00EF4DA8 /* PointNewViewController.swift */,
@@ -359,6 +363,7 @@
 				FC47EC42213E8DAD00EF4DA8 /* PointNewViewController.swift in Sources */,
 				1AD9E9A2213ED88A0055A505 /* ProjectsTableViewCell.swift in Sources */,
 				FC47EC2F213E58FD00EF4DA8 /* ProjectDetailViewController.swift in Sources */,
+				61F0869A213ED7DE00E1BAF3 /* PointCell.swift in Sources */,
 				FC47EC3E213E8D4600EF4DA8 /* PointDetailViewController.swift in Sources */,
 				FC47EC3C213E89AA00EF4DA8 /* ProjectMainViewController.swift in Sources */,
 				FC230E86213EC0E000A67845 /* User.swift in Sources */,
@@ -366,9 +371,9 @@
 				FC47EC2A213E567900EF4DA8 /* ProjectNewViewController.swift in Sources */,
 				FC47EC33213E704800EF4DA8 /* PointViewController.swift in Sources */,
 				FC47EC40213E8D7100EF4DA8 /* LogisticViewController.swift in Sources */,
+				61F08698213ED28200E1BAF3 /* Point.swift in Sources */,
 				FC47EC05213D7E2500EF4DA8 /* AppDelegate.swift in Sources */,
 				FC47EC38213E853400EF4DA8 /* PointMainViewController.swift in Sources */,
-				61F08696213EB70A00E1BAF3 /* PointCell.swift in Sources */,
 				FC47EC28213E563A00EF4DA8 /* ProjectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

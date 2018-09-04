@@ -13,11 +13,10 @@ class PointMainViewController: UIViewController {
     @IBOutlet weak var cvPointDetail: UIView!
     @IBOutlet weak var cvLogistic: UIView!
     //var idSelected = Int()
-    var pointData = [String:String]()
+    var pointData : Point!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(pointData)
-        print("ssa")
+        
     }
     
     @IBAction func segmentedChanged(_ sender: UISegmentedControl) {
