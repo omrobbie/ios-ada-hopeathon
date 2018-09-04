@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t4a-ls-IvW">
-    <device id="retina5_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aKN-g7-evJ">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,23 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Project Detail View Controller-->
         <scene sceneID="xOE-6e-c5E">
             <objects>
-                <viewController id="aKN-g7-evJ" sceneMemberID="viewController">
+                <viewController id="aKN-g7-evJ" customClass="ProjectDetailViewController" customModule="Hopeathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UfN-NV-tpp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Project detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02Q-hA-NDq">
-                                <rect key="frame" x="16" y="44" width="101" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detail project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0l-yE-OfF">
-                                <rect key="frame" x="16" y="100" width="102" height="21"/>
+                                <rect key="frame" x="16" y="20" width="101" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -36,28 +29,25 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="m2k-iy-5K0"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rs8-gN-Nt5">
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="BRA-9i-XVi">
-                            <connections>
-                                <segue destination="F39-3d-Ldp" kind="show" identifier="toEditProject" id="jIY-0Z-XF9"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="HOj-1m-wSq"/>
+                    <connections>
+                        <segue destination="F39-3d-Ldp" kind="show" identifier="toEditProject" id="2bJ-vj-sFj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yWs-Fg-cfy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="943.20000000000005" y="-18.472906403940886"/>
         </scene>
-        <!--View Controller-->
+        <!--Project Detail Edit View Controller-->
         <scene sceneID="kua-FA-BZJ">
             <objects>
-                <viewController id="F39-3d-Ldp" sceneMemberID="viewController">
+                <viewController id="F39-3d-Ldp" customClass="ProjectDetailEditViewController" customModule="Hopeathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cmP-ha-GAL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edit project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="653-cc-ODp">
-                                <rect key="frame" x="16" y="100" width="88" height="21"/>
+                                <rect key="frame" x="16" y="20" width="88" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -67,30 +57,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="4pR-hv-6HO"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dXQ-QQ-t6S"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7G-fP-4tF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1751" y="-18"/>
-        </scene>
-        <!--Detail-->
-        <scene sceneID="rIc-VF-j0a">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9u8-fS-mz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t4a-ls-IvW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Detail" id="VHc-XP-UYr"/>
-                    <toolbarItems/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xvf-Vd-8x9">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="aKN-g7-evJ" kind="relationship" relationship="rootViewController" id="ZCb-w0-u0j"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="0.80000000000000004" y="-18.472906403940886"/>
         </scene>
     </scenes>
 </document>

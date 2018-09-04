@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		603E4C71CB24E3F551285753 /* Pods_Hopeathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD9E3B06359142A365FC463 /* Pods_Hopeathon.framework */; };
 		FC47EC05213D7E2500EF4DA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47EC04213D7E2500EF4DA8 /* AppDelegate.swift */; };
 		FC47EC07213D7E2500EF4DA8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47EC06213D7E2500EF4DA8 /* LoginViewController.swift */; };
 		FC47EC0A213D7E2500EF4DA8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC47EC08213D7E2500EF4DA8 /* Login.storyboard */; };
@@ -20,9 +21,20 @@
 		FC47EC2C213E579100EF4DA8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47EC2B213E579100EF4DA8 /* Extensions.swift */; };
 		FC47EC2F213E58FD00EF4DA8 /* ProjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47EC2E213E58FD00EF4DA8 /* ProjectDetailViewController.swift */; };
 		FC47EC31213E611600EF4DA8 /* ProjectDetailEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47EC30213E611600EF4DA8 /* ProjectDetailEditViewController.swift */; };
+		FC47EC33213E704800EF4DA8 /* PointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47EC32213E704800EF4DA8 /* PointViewController.swift */; };
+		FC47EC36213E77D700EF4DA8 /* Logistic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC47EC35213E77D700EF4DA8 /* Logistic.storyboard */; };
+		FC47EC38213E853400EF4DA8 /* PointMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47EC37213E853400EF4DA8 /* PointMainViewController.swift */; };
+		FC47EC3C213E89AA00EF4DA8 /* ProjectMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47EC3B213E89AA00EF4DA8 /* ProjectMainViewController.swift */; };
+		FC47EC3E213E8D4600EF4DA8 /* PointDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47EC3D213E8D4600EF4DA8 /* PointDetailViewController.swift */; };
+		FC47EC40213E8D7100EF4DA8 /* LogisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47EC3F213E8D7100EF4DA8 /* LogisticViewController.swift */; };
+		FC47EC42213E8DAD00EF4DA8 /* PointNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47EC41213E8DAD00EF4DA8 /* PointNewViewController.swift */; };
+		FC47EC44213E933D00EF4DA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC47EC43213E933D00EF4DA8 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0588584EEEB706711FE93AB8 /* Pods-Hopeathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hopeathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hopeathon/Pods-Hopeathon.debug.xcconfig"; sourceTree = "<group>"; };
+		7DD9E3B06359142A365FC463 /* Pods_Hopeathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hopeathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B76744A23B4EFA2A4F622AA9 /* Pods-Hopeathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hopeathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hopeathon/Pods-Hopeathon.release.xcconfig"; sourceTree = "<group>"; };
 		FC47EC01213D7E2500EF4DA8 /* Hopeathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hopeathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC47EC04213D7E2500EF4DA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC47EC06213D7E2500EF4DA8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +50,14 @@
 		FC47EC2B213E579100EF4DA8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FC47EC2E213E58FD00EF4DA8 /* ProjectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailViewController.swift; sourceTree = "<group>"; };
 		FC47EC30213E611600EF4DA8 /* ProjectDetailEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailEditViewController.swift; sourceTree = "<group>"; };
+		FC47EC32213E704800EF4DA8 /* PointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointViewController.swift; sourceTree = "<group>"; };
+		FC47EC35213E77D700EF4DA8 /* Logistic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Logistic.storyboard; sourceTree = "<group>"; };
+		FC47EC37213E853400EF4DA8 /* PointMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointMainViewController.swift; sourceTree = "<group>"; };
+		FC47EC3B213E89AA00EF4DA8 /* ProjectMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectMainViewController.swift; sourceTree = "<group>"; };
+		FC47EC3D213E8D4600EF4DA8 /* PointDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointDetailViewController.swift; sourceTree = "<group>"; };
+		FC47EC3F213E8D7100EF4DA8 /* LogisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogisticViewController.swift; sourceTree = "<group>"; };
+		FC47EC41213E8DAD00EF4DA8 /* PointNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointNewViewController.swift; sourceTree = "<group>"; };
+		FC47EC43213E933D00EF4DA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +65,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				603E4C71CB24E3F551285753 /* Pods_Hopeathon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		784A7CE8018346FE212CFDB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DD9E3B06359142A365FC463 /* Pods_Hopeathon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEC5395F616BDD19817CE01D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0588584EEEB706711FE93AB8 /* Pods-Hopeathon.debug.xcconfig */,
+				B76744A23B4EFA2A4F622AA9 /* Pods-Hopeathon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FC47EBF8213D7E2500EF4DA8 = {
 			isa = PBXGroup;
 			children = (
 				FC47EC03213D7E2500EF4DA8 /* Hopeathon */,
 				FC47EC02213D7E2500EF4DA8 /* Products */,
+				CEC5395F616BDD19817CE01D /* Pods */,
+				784A7CE8018346FE212CFDB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +117,7 @@
 				FC47EC21213E203B00EF4DA8 /* Project Detail */,
 				FC47EC1A213DFB4400EF4DA8 /* Point */,
 				FC47EC24213E207E00EF4DA8 /* Point Detail */,
+				FC47EC34213E77BE00EF4DA8 /* Logistic */,
 			);
 			path = Hopeathon;
 			sourceTree = "<group>";
@@ -85,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				FC47EC10213D7E2700EF4DA8 /* Info.plist */,
+				FC47EC43213E933D00EF4DA8 /* GoogleService-Info.plist */,
 				FC47EC0B213D7E2700EF4DA8 /* Assets.xcassets */,
 				FC47EC04213D7E2500EF4DA8 /* AppDelegate.swift */,
 			);
@@ -105,6 +147,7 @@
 			children = (
 				FC47EC1B213DFCD300EF4DA8 /* Project.storyboard */,
 				FC47EC27213E563A00EF4DA8 /* ProjectViewController.swift */,
+				FC47EC3B213E89AA00EF4DA8 /* ProjectMainViewController.swift */,
 				FC47EC29213E567900EF4DA8 /* ProjectNewViewController.swift */,
 			);
 			path = Project;
@@ -114,6 +157,9 @@
 			isa = PBXGroup;
 			children = (
 				FC47EC1F213E06A900EF4DA8 /* Point.storyboard */,
+				FC47EC32213E704800EF4DA8 /* PointViewController.swift */,
+				FC47EC37213E853400EF4DA8 /* PointMainViewController.swift */,
+				FC47EC41213E8DAD00EF4DA8 /* PointNewViewController.swift */,
 			);
 			path = Point;
 			sourceTree = "<group>";
@@ -132,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				FC47EC25213E209700EF4DA8 /* Point Detail.storyboard */,
+				FC47EC3D213E8D4600EF4DA8 /* PointDetailViewController.swift */,
 			);
 			path = "Point Detail";
 			sourceTree = "<group>";
@@ -144,6 +191,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		FC47EC34213E77BE00EF4DA8 /* Logistic */ = {
+			isa = PBXGroup;
+			children = (
+				FC47EC35213E77D700EF4DA8 /* Logistic.storyboard */,
+				FC47EC3F213E8D7100EF4DA8 /* LogisticViewController.swift */,
+			);
+			path = Logistic;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC47EC13213D7E2700EF4DA8 /* Build configuration list for PBXNativeTarget "Hopeathon" */;
 			buildPhases = (
+				F96F30BD5EF46121AED2DC64 /* [CP] Check Pods Manifest.lock */,
 				FC47EBFD213D7E2500EF4DA8 /* Sources */,
 				FC47EBFE213D7E2500EF4DA8 /* Frameworks */,
 				FC47EBFF213D7E2500EF4DA8 /* Resources */,
+				D8C361112FD1B30AAB0D5964 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,15 +261,74 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC47EC1C213DFCD300EF4DA8 /* Project.storyboard in Resources */,
+				FC47EC44213E933D00EF4DA8 /* GoogleService-Info.plist in Resources */,
 				FC47EC26213E209700EF4DA8 /* Point Detail.storyboard in Resources */,
 				FC47EC20213E06A900EF4DA8 /* Point.storyboard in Resources */,
 				FC47EC0C213D7E2700EF4DA8 /* Assets.xcassets in Resources */,
 				FC47EC23213E206A00EF4DA8 /* Project Detail.storyboard in Resources */,
+				FC47EC36213E77D700EF4DA8 /* Logistic.storyboard in Resources */,
 				FC47EC0A213D7E2500EF4DA8 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D8C361112FD1B30AAB0D5964 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hopeathon/Pods-Hopeathon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hopeathon/Pods-Hopeathon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F96F30BD5EF46121AED2DC64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hopeathon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC47EBFD213D7E2500EF4DA8 /* Sources */ = {
@@ -220,10 +337,16 @@
 			files = (
 				FC47EC31213E611600EF4DA8 /* ProjectDetailEditViewController.swift in Sources */,
 				FC47EC2C213E579100EF4DA8 /* Extensions.swift in Sources */,
+				FC47EC42213E8DAD00EF4DA8 /* PointNewViewController.swift in Sources */,
 				FC47EC2F213E58FD00EF4DA8 /* ProjectDetailViewController.swift in Sources */,
+				FC47EC3E213E8D4600EF4DA8 /* PointDetailViewController.swift in Sources */,
+				FC47EC3C213E89AA00EF4DA8 /* ProjectMainViewController.swift in Sources */,
 				FC47EC07213D7E2500EF4DA8 /* LoginViewController.swift in Sources */,
 				FC47EC2A213E567900EF4DA8 /* ProjectNewViewController.swift in Sources */,
+				FC47EC33213E704800EF4DA8 /* PointViewController.swift in Sources */,
+				FC47EC40213E8D7100EF4DA8 /* LogisticViewController.swift in Sources */,
 				FC47EC05213D7E2500EF4DA8 /* AppDelegate.swift in Sources */,
+				FC47EC38213E853400EF4DA8 /* PointMainViewController.swift in Sources */,
 				FC47EC28213E563A00EF4DA8 /* ProjectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +481,7 @@
 		};
 		FC47EC14213D7E2700EF4DA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0588584EEEB706711FE93AB8 /* Pods-Hopeathon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +500,7 @@
 		};
 		FC47EC15213D7E2700EF4DA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B76744A23B4EFA2A4F622AA9 /* Pods-Hopeathon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

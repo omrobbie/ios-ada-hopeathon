@@ -26,31 +26,82 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KuG-N3-l5j">
-                                <rect key="frame" x="16" y="129" width="92" height="30"/>
+                                <rect key="frame" x="16" y="129" width="175" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Detail Project"/>
+                                <state key="normal" title="Menuju ke detail Project 1"/>
                                 <connections>
-                                    <action selector="btnDetailProjectClicked:" destination="LoG-7g-t0F" eventType="touchUpInside" id="Uoo-fo-UfL"/>
+                                    <action selector="btnDetailProjectClicked:" destination="LoG-7g-t0F" eventType="touchUpInside" id="nZz-VX-eNg"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ifz-Sn-lEV"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Projects" id="paO-aQ-HkQ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="khD-ws-Mbx">
-                            <connections>
-                                <segue destination="baw-rw-Nwf" kind="show" identifier="toNewProject" id="fBr-15-zWa"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Projects" id="paO-aQ-HkQ"/>
                     <connections>
-                        <segue destination="VMI-fo-Ecj" kind="show" identifier="toDetailProject" id="G7L-Vq-D8d"/>
+                        <segue destination="7iG-yM-E2s" kind="show" identifier="toDetailProject" id="m2E-co-nMm"/>
+                        <segue destination="baw-rw-Nwf" kind="show" identifier="toNewProject" id="4Ao-GI-16C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r5d-wG-Rfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1308" y="118"/>
+        </scene>
+        <!--Project Main View Controller-->
+        <scene sceneID="j1D-6Z-Q4R">
+            <objects>
+                <viewController id="7iG-yM-E2s" customClass="ProjectMainViewController" customModule="Hopeathon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7mG-5l-hfZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7mC-gn-AcZ">
+                                <rect key="frame" x="16" y="104" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Detail"/>
+                                    <segment title="Point"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedProjectChanged:" destination="7iG-yM-E2s" eventType="valueChanged" id="iJi-Aq-ml2"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="66Y-ZI-xNs" userLabel="Point Main">
+                                <rect key="frame" x="0.0" y="133" width="375" height="679"/>
+                                <connections>
+                                    <segue destination="zUs-j5-xCA" kind="embed" id="PRg-3V-jh1"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jw9-r5-iDA" userLabel="Project Detail">
+                                <rect key="frame" x="0.0" y="133" width="375" height="679"/>
+                                <connections>
+                                    <segue destination="LfY-lz-ecd" kind="embed" id="5WH-t9-MOC"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7mC-gn-AcZ" firstAttribute="top" secondItem="6yP-ot-aJr" secondAttribute="top" constant="16" id="CG3-q7-Aam"/>
+                            <constraint firstItem="66Y-ZI-xNs" firstAttribute="top" secondItem="7mC-gn-AcZ" secondAttribute="bottom" constant="1" id="FY7-z7-bUW"/>
+                            <constraint firstItem="6yP-ot-aJr" firstAttribute="trailing" secondItem="7mC-gn-AcZ" secondAttribute="trailing" constant="16" id="GiK-HN-Qy0"/>
+                            <constraint firstItem="jw9-r5-iDA" firstAttribute="leading" secondItem="6yP-ot-aJr" secondAttribute="leading" id="If0-l6-atP"/>
+                            <constraint firstItem="7mC-gn-AcZ" firstAttribute="leading" secondItem="6yP-ot-aJr" secondAttribute="leading" constant="16" id="Pnz-mQ-UBa"/>
+                            <constraint firstAttribute="bottom" secondItem="jw9-r5-iDA" secondAttribute="bottom" id="kUs-cW-WXy"/>
+                            <constraint firstItem="jw9-r5-iDA" firstAttribute="top" secondItem="7mC-gn-AcZ" secondAttribute="bottom" constant="1" id="oIk-Lj-u32"/>
+                            <constraint firstAttribute="bottom" secondItem="66Y-ZI-xNs" secondAttribute="bottom" id="pCh-zF-nG3"/>
+                            <constraint firstItem="6yP-ot-aJr" firstAttribute="trailing" secondItem="jw9-r5-iDA" secondAttribute="trailing" id="pag-5q-Frf"/>
+                            <constraint firstItem="66Y-ZI-xNs" firstAttribute="leading" secondItem="6yP-ot-aJr" secondAttribute="leading" id="qdy-Kl-BPy"/>
+                            <constraint firstItem="66Y-ZI-xNs" firstAttribute="trailing" secondItem="6yP-ot-aJr" secondAttribute="trailing" id="yUW-sn-qA1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6yP-ot-aJr"/>
+                    </view>
+                    <connections>
+                        <outlet property="cvPointMain" destination="66Y-ZI-xNs" id="U1o-56-wQX"/>
+                        <outlet property="cvProjectDetail" destination="jw9-r5-iDA" id="rp7-PY-han"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PA2-mJ-J54" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2096.8000000000002" y="483.99014778325125"/>
         </scene>
         <!--Project New View Controller-->
         <scene sceneID="gPx-KO-F3f">
@@ -95,24 +146,6 @@
             </objects>
             <point key="canvasLocation" x="396" y="118.29085457271366"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="zOC-0I-Tkj">
-            <objects>
-                <tabBarController id="VMI-fo-Ecj" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t2c-p0-YTB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="LfY-lz-ecd" kind="relationship" relationship="viewControllers" id="jFN-Te-JLd"/>
-                        <segue destination="zUs-j5-xCA" kind="relationship" relationship="viewControllers" id="Vrc-ou-Pc5"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7LF-Ni-qC9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2097" y="488"/>
-        </scene>
         <!--Project Detail-->
         <scene sceneID="vXi-ed-li7">
             <objects>
@@ -121,7 +154,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fsd-wJ-Rnj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1797" y="918"/>
+            <point key="canvasLocation" x="1800" y="912"/>
         </scene>
         <!--Point-->
         <scene sceneID="Ynq-gy-Ip8">
@@ -131,7 +164,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nHR-G7-ewy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2395" y="918"/>
+            <point key="canvasLocation" x="2414" y="912"/>
         </scene>
     </scenes>
 </document>

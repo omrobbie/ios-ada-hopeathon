@@ -12,12 +12,5 @@ class ProjectDetailEditViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let rightBarButton = UIBarButtonItem(title: "Save", style: UIBarButtonItemStyle.plain, target: self, action: #selector(save(_:)))
-        self.navigationItem.rightBarButtonItem = rightBarButton
-    }
-    
-    @objc func save(_ sender:UIBarButtonItem!) {
-        showDialog(title: "Save New Project")
     }
 }

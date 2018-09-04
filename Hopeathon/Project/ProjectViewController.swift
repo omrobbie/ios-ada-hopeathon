@@ -13,7 +13,7 @@ class ProjectViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     @IBAction func btnDetailProjectClicked(_ sender: Any) {
         performSegue(withIdentifier: "toDetailProject", sender: sender)
     }

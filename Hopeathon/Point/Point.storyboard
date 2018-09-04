@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Poe-P0-5Qk">
-    <device id="retina5_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NdU-PU-Xrp">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,69 +10,129 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Point View Controller-->
         <scene sceneID="HqT-hB-eLi">
             <objects>
-                <viewController id="NdU-PU-Xrp" sceneMemberID="viewController">
+                <viewController id="NdU-PU-Xrp" customClass="PointViewController" customModule="Hopeathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NVS-8J-xLc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="List of point" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yi-pQ-bYm">
-                                <rect key="frame" x="16" y="100" width="91" height="21"/>
+                                <rect key="frame" x="16" y="20" width="91" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UF2-lY-AQF">
-                                <rect key="frame" x="16" y="129" width="79" height="30"/>
+                                <rect key="frame" x="16" y="49" width="192" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Detail Point"/>
+                                <state key="normal" title="Menuju ke detail dari Point 1"/>
+                                <connections>
+                                    <action selector="btnDetailPointClicked:" destination="NdU-PU-Xrp" eventType="touchUpInside" id="St2-Ag-yxC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="CS6-6J-EKF"/>
                     </view>
-                    <navigationItem key="navigationItem" id="F1E-Bn-gy3">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="OCD-aG-zon">
-                            <connections>
-                                <segue destination="QnI-rv-Uap" kind="show" identifier="toNewPoint" id="ypK-LN-WGH"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="F1E-Bn-gy3"/>
                     <connections>
-                        <segue destination="GKU-1X-eAE" kind="show" id="CEc-mA-uhZ"/>
+                        <segue destination="QnI-rv-Uap" kind="show" identifier="toNewPoint" id="saT-jS-Ctj"/>
+                        <segue destination="5SI-oH-ll0" kind="show" identifier="toDetailPoint" id="Jgp-32-iTc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WP9-PV-CZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3981.5999999999999" y="483.99014778325125"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="xWt-p4-5AC">
+        <!--Point Main View Controller-->
+        <scene sceneID="d2e-JX-1zZ">
             <objects>
-                <tabBarController id="GKU-1X-eAE" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XcQ-mN-DTg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="j9K-MQ-g8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="5SI-oH-ll0" customClass="PointMainViewController" customModule="Hopeathon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cd6-WB-F71">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zr7-Xg-MAY">
+                                <rect key="frame" x="16" y="36" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Detail"/>
+                                    <segment title="Logistic"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedChanged:" destination="5SI-oH-ll0" eventType="valueChanged" id="ceP-Go-r8a"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRf-Hn-hX7" userLabel="Logistic">
+                                <rect key="frame" x="0.0" y="65" width="375" height="602"/>
+                                <connections>
+                                    <segue destination="ac5-tJ-nMO" kind="embed" id="5tg-nI-DVH"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oiU-WM-8Ga" userLabel="Point Detail">
+                                <rect key="frame" x="0.0" y="65" width="375" height="602"/>
+                                <connections>
+                                    <segue destination="WTU-aY-bjI" kind="embed" id="b0S-ps-zrT"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hht-1E-Mg0" firstAttribute="trailing" secondItem="oiU-WM-8Ga" secondAttribute="trailing" id="8RF-Xu-EQE"/>
+                            <constraint firstItem="oiU-WM-8Ga" firstAttribute="leading" secondItem="hht-1E-Mg0" secondAttribute="leading" id="B9B-7H-8RT"/>
+                            <constraint firstItem="zr7-Xg-MAY" firstAttribute="leading" secondItem="hht-1E-Mg0" secondAttribute="leading" constant="16" id="Bz0-Mp-xc7"/>
+                            <constraint firstItem="pRf-Hn-hX7" firstAttribute="top" secondItem="zr7-Xg-MAY" secondAttribute="bottom" constant="1" id="TIW-A8-mRP"/>
+                            <constraint firstItem="zr7-Xg-MAY" firstAttribute="top" secondItem="hht-1E-Mg0" secondAttribute="top" constant="16" id="ah7-9J-Kyr"/>
+                            <constraint firstItem="hht-1E-Mg0" firstAttribute="trailing" secondItem="pRf-Hn-hX7" secondAttribute="trailing" id="ndQ-aY-4eD"/>
+                            <constraint firstAttribute="bottom" secondItem="pRf-Hn-hX7" secondAttribute="bottom" id="rZr-D0-CwL"/>
+                            <constraint firstItem="pRf-Hn-hX7" firstAttribute="leading" secondItem="hht-1E-Mg0" secondAttribute="leading" id="tNY-Wu-FqG"/>
+                            <constraint firstAttribute="bottom" secondItem="oiU-WM-8Ga" secondAttribute="bottom" id="tgs-xb-FSx"/>
+                            <constraint firstItem="oiU-WM-8Ga" firstAttribute="top" secondItem="zr7-Xg-MAY" secondAttribute="bottom" constant="1" id="tsu-hy-jH5"/>
+                            <constraint firstItem="hht-1E-Mg0" firstAttribute="trailing" secondItem="zr7-Xg-MAY" secondAttribute="trailing" constant="16" id="yMP-y2-P8j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hht-1E-Mg0"/>
+                    </view>
+                    <connections>
+                        <outlet property="cvLogistic" destination="pRf-Hn-hX7" id="Wjp-VG-gql"/>
+                        <outlet property="cvPointDetail" destination="oiU-WM-8Ga" id="gM2-FS-gQf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hPl-0H-yds" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4770" y="853"/>
+            <point key="canvasLocation" x="4768.8000000000002" y="849.7536945812808"/>
         </scene>
-        <!--View Controller-->
+        <!--Point Detail-->
+        <scene sceneID="nq2-L6-YxZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Point Detail" id="WTU-aY-bjI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="xNf-OW-X90"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h6s-hy-5YR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4475" y="1307"/>
+        </scene>
+        <!--Logistic-->
+        <scene sceneID="ryH-Jk-ajF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Logistic" id="ac5-tJ-nMO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="jPh-K0-BAE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4MF-6V-Gh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5069" y="1307"/>
+        </scene>
+        <!--Point New View Controller-->
         <scene sceneID="cGC-Ms-kGy">
             <objects>
-                <viewController id="QnI-rv-Uap" sceneMemberID="viewController">
+                <viewController id="QnI-rv-Uap" customClass="PointNewViewController" customModule="Hopeathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uck-AV-jvD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create new point" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwx-9Q-cxC">
-                                <rect key="frame" x="16" y="100" width="131" height="21"/>
+                                <rect key="frame" x="16" y="20" width="131" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -82,30 +142,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Wtc-VZ-Itr"/>
                     </view>
+                    <navigationItem key="navigationItem" id="QY7-rq-pVu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="RF6-G9-6xu"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wFl-cj-X67" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4770.3999999999996" y="163.30049261083744"/>
-        </scene>
-        <!--Point-->
-        <scene sceneID="YeV-dG-PnL">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Poe-P0-5Qk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Point" id="NuN-NV-FeU"/>
-                    <toolbarItems/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I1L-C9-HLB">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="NdU-PU-Xrp" kind="relationship" relationship="rootViewController" id="LPp-fM-jq6"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5FF-ty-xMG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3039.1999999999998" y="483.99014778325125"/>
         </scene>
     </scenes>
 </document>
