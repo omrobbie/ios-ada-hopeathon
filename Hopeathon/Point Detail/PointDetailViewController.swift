@@ -16,17 +16,18 @@ class PointDetailViewController: UIViewController {
     @IBOutlet weak var pointPhone: UILabel!
     @IBOutlet weak var pointLoc: UILabel!
     @IBOutlet weak var pointType: UILabel!
-    var pointData = [String:String]()
+    var pointData : Point!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(pointData)
-        //projectName.text = pointData["projectName"]
-        pointName.text = pointData["pointName"]
-        //pointLeader.text = pointData["pointLeader"]
-        //pointPhone.text = pointData["pointPhone"]
-        pointLoc.text = pointData["pointLoc"]
-        //pointType.text = pointData["pointType"]
+        
+        pointName.text = pointData.name
+        pointLeader.text = pointData.leader
+        pointPhone.text = pointData.phone
+        pointLoc.text = pointData.location
+        pointType.text = pointData.type
+        
         
     }
 }
